@@ -1,0 +1,34 @@
+<!--pages/map/map.wxml-->
+<view class='maincontainer'>
+  <view class="mapcontainer">
+    <button class='btnchoose' bindtap='chooseLocation' type='primary'>手动选择定位</button>
+    <text class='bold'>地址:</text>
+    <input bindinput='inputAddress' value='{{address}}' maxlength='140' class='input'></input>
+    <text class='bold'>名称:</text>
+   <input bindinput='inputName' value='{{name}}' maxlength='140' class='input'></input>
+    <text class='bold'>简单描述一下：</text>
+    <textarea bindinput='inputDesc' maxlength='500' class='input'
+    value='{{desc}}'></textarea>
+  </view>
+
+  <view class='imagecontainer'>
+    <text class='tips'>建议至少添加1张门店图片，方便吃货查找</text>
+    
+    <view>
+      <button type='primary' bindtap='addPics'>点击添加图片</button>
+      <text class='pics_added'>已添加{{urls.length}}/{{total_pics_number}}张图片</text>
+    </view>
+
+    <view>
+      <image wx:for="{{urls}}" wx:key="unique" bindtap='preview' mode='aspectFill' class='thumbail' style='width:{{img_width}}px;height:{{img_height}}px' src='{{item}}'></image>
+    </view>
+
+    <view class='preview' hidden='{{!showpre}}'>
+      <text>选择一张图作为首页图片</text>
+      <image mode='aspectFill' bindtap='prenext' src='{{imgpreurl}}'></image>
+    </view>
+  </view>
+
+
+ <include src="../commom/loading.wxml"/>
+</view>

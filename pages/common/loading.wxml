@@ -1,0 +1,5 @@
+<view catchtouchstart="stopScroll"
+hidden='{{!show_loading}}' class='loading_area'
+>
+<loading>加载中...</loading>
+</view>

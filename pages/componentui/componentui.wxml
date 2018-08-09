@@ -1,0 +1,48 @@
+<!--pages/componentui/componentui.wxml-->
+<view class='parentcontainer'>
+  <view class='section'>
+    <view class='section_title'>flex-direction:row</view>
+    <view class='flex-wrp'>
+      <view class='flex-item bg_green'>1</view>
+      <view class='flex-item bg_red'>2</view>
+      <view class='flex-item bg_blue'>3</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section__title">vertical scroll</view>
+    <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <view id="green" class="scroll-view-item bg_green"></view>
+      <view id="red" class="scroll-view-item bg_red"></view>
+      <view id="yellow" class="scroll-view-item bg_yellow"></view>
+      <view id="blue" class="scroll-view-item bg_blue"></view>
+    </scroll-view>
+
+    <view class="btn-area">
+      <button size="mini" bindtap="tap">click me to scroll into view </button>
+      <button size="mini" bindtap="tapMove">click me to scroll</button>
+    </view>
+  </view>
+
+  <view class="section section_gap">
+    <view class="section__title">horizontal scroll</view>
+    <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+      <view id="green" class="scroll-view-item_H bg_green"></view>
+      <view id="red" class="scroll-view-item_H bg_red"></view>
+      <view id="yellow" class="scroll-view-item_H bg_yellow"></view>
+      <view id="blue" class="scroll-view-item_H bg_blue"></view>
+    </scroll-view>
+  </view>
+
+  <view>
+    <swiper indicator-dots='{{indictorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' indicator-active-color='{{activecolor}}'>
+    <block wx:for='{{imgUrls}}'>
+      <swiper-item>
+        <image src='{{item}}' class='slide-image' mode='aspectFill' ></image>
+      </swiper-item>
+    </block>
+    
+    </swiper>
+  </view>
+
+</view>

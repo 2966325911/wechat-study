@@ -1,0 +1,23 @@
+/* pages/setting/setting.wxss */
+.setting {
+  margin-top: 20rpx;
+  background-color: #eee
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+  font-size: 30rpx;
+  color: rgb(14, 2, 2)
+}
+
+
+.divider{
+  height: 20rpx;
+  /* box-shadow: inset 0 1rpx 2rpx #eee */
+  background-color: #eee
+}

@@ -1,0 +1,29 @@
+<!--pages/setting/setting.wxml-->
+<view class='setting'>
+  <view class='item'>
+    <text>个人资料</text>
+    <switch data-id='1' checked='{{profileSwitch}}' bindchange='listenerSwitch'/>
+  </view>
+  <view class='item'>
+    <text>我的优惠券</text>
+    <switch data-id='2' bindchange='listenerSwitch' checked='{{youhuiquanSwitch}}'/>
+  </view>
+  <view class='divider'></view>
+  <view class='item'>
+    <text>常见问题</text>
+    <switch data-id='3' bindchange='listenerSwitch' checked='{{commomQuestionSwitch}}'/>
+  </view>
+  <view class='item'>
+    <text>使用条款</text>
+    <switch data-id='4' bindchange='listenerSwitch'/>
+  </view>
+  <view class='item'>
+    <text>隐私权政策</text>
+    <switch data-id='5' bindchange='listenerSwitch'/>
+  </view>
+
+  <view class='item'>
+    <text>联系客服</text>
+    <switch data-id='6' bindchange='listenerSwitch'/>
+  </view>
+</view>

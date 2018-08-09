@@ -1,0 +1,8 @@
+<!--pages/mengchong/mengchong.wxml-->
+<view class='map-container'>
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" class='map' show-location  circles='{{circles}}' polyline="{{polyline}}" markers='{{markers}}' ></map>
+</view>
+<view class='btns'>
+  <view class='btn btn-publish'>发布</view>
+  <view class='btn' bindtap='searchposition'>搜索</view>
+</view>

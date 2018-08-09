@@ -1,0 +1,10 @@
+<!--pages/contact/contact.wxml-->
+<view>
+  <view class='item_header'>
+    <navigator class='item' url='/pages/mengchong/mengchong'>{{titlename}}</navigator>
+
+    <navigator class='item' url='/pages/map/map'>{{searchmap}}</navigator>
+    <navigator class='item' url='/pages/componentui/componentui'>{{commonui}}</navigator>
+  </view>
+
+</view>
