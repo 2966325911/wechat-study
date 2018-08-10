@@ -55,3 +55,31 @@
   height: 300rpx;
   display: block;
 }
+
+.movableview{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.icontest{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+
+.progress{
+   margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.progress progress{
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
