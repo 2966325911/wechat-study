@@ -83,3 +83,17 @@
 .other-button-hover {
   background-color: blue;
 }
+.section {
+  margin-top: 20rpx;
+}
+
+.radio-test{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.section textarea{
+  margin: 2rpx,2rpx;
+  border: 1rpx solid red;
+  border-radius: 4rpx;
+}
