@@ -5,6 +5,22 @@
 
     <navigator class='item' url='/pages/map/map'>{{searchmap}}</navigator>
     <navigator class='item' url='/pages/componentui/componentui'>{{commonui}}</navigator>
+     <navigator class='item' url='/pages/canvastest/canvastest'>{{canvastest}}</navigator>
+          <navigator class='item' url='/pages/record/record'>{{record}}</navigator>
+          <navigator class='item' url='/pages/uimutual/uimutual'>{{uimutual}}</navigator>
+
+          <navigator class='item' url='/pages/webview/webview'>{{webview}}</navigator> 
+          
+                    <navigator class='item' url='/pages/device/device'>{{device}}</navigator>
+           </view>
+
+  <view>
+    <button class='shareBtn' open-type='share' type='primary' hover-class='other-button-hover'>转发按钮</button>
   </view>
+  
+<button class="kf_button" bindtap='bindtapdianhua'>
+    <image class="kf_image" src="../../assets/avatar.png"></image>
+</button>
+
 
 </view>

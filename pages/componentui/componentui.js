@@ -4,6 +4,7 @@ const date = new Date()
 const years = []
 const months = []
 const days = []
+var recordPath= ""
 
 for (let i = 1990; i <= date.getFullYear() + 100; i++) {
   years.push(i)
@@ -268,7 +269,8 @@ Page({
     /**
      * 当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含，fill：填充，cover：覆盖
      */
-    objectFit : 'fill'
+    objectFit : 'fill',
+   
 
 
 
@@ -547,6 +549,32 @@ Page({
   },
   error(e) {
     console.log(e.detail)
+  },
+
+  startRecord(){
+    var that = this;
+    wx.startRecord({
+      success : function(res) {
+        var tempFile = res.tempFilePath
+        console.log("===tempFile==" + tempFile)
+        recordPath = res.tempFilePath
+      },
+      fail : function(res) {
+        //录音失败
+      }
+    })
+  },
+  stopRecord(){
+    wx.stopRecord()
+  },
+
+  playRecord(){
+    console.log("===recordPath==" + recordPath)
+    wx.playVoice({
+      filePath: recordPath
+    })
+
+    wx.show
   }
 
 })

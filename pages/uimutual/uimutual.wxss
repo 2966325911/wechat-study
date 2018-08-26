@@ -1,0 +1,4 @@
+/* pages/uimutual/uimutual.wxss */
+.btnItem{
+  margin-top: 20rpx
+}

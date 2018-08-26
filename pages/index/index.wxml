@@ -39,5 +39,15 @@
       <image src='../../assets/link-01.png'></image>
       <image src='../../assets/link-02.png'></image>
   </view>
+
+  <button class="kf_button" bindtap='bindtapdianhua'>
+    <image class="kf_image" src="../../assets/avatar.png"></image>
+</button>
+  <button class="kf_button1" bindtap='bindtapdianhua'>
+    <image class="kf_image1" src="../../assets/avatar.png"></image>
+</button>
+  <button class="kf_button2" bindtap='bindtapdianhua'>
+    <image class="kf_image2" src="../../assets/avatar.png"></image>
+</button>
 </view>
 

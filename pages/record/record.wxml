@@ -1,0 +1,8 @@
+<!--pages/record/record.wxml-->
+<view>
+  <button class='btnitem' type='primary' bindtap='startRecord'>开始录音</button>
+  <button class='btnitem' type='primary' bindtap='pauseRecord'>暂停录音</button>
+  <button class='btnitem' type='primary' bindcontact='resuemeRecord'>继续录音</button>
+  <button class='btnitem' type='primary' bindtap='stopRecord'>停止录音</button>
+  <button class='btnitem' type='primary' bindtap='playRecord'>播放录音</button>
+</view>

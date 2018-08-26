@@ -1,0 +1,5 @@
+/* pages/record/record.wxss */
+
+.btnitem{
+  margin-top: 20rpx
+}

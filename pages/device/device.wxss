@@ -1,0 +1,4 @@
+/* pages/device/device.wxss */
+.btnItem{
+  margin-top: 10rpx
+}

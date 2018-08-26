@@ -1,0 +1,16 @@
+<!--pages/device/device.wxml-->
+<view>
+  <button type='primary' class='btnItem' bindtap='getSystemInfo'>获取设备系统信息，具体打印的日志</button>
+
+    <button type='primary' class='btnItem' bindtap='getNetworkstate'>获取设备网络信息</button>
+
+    
+    <button type='primary' class='btnItem' bindtap='callphone'>打电话</button>
+    <button type='primary' class='btnItem' bindtap='scancode'>设备扫码</button>
+
+    <button type='primary' class='btnItem' bindtap='screenon'>设备屏幕亮度测试</button>
+
+    <button type='primary' class='btnItem' bindtap='userCaptureScreen'>用户截屏事件测试</button>
+
+    <button type='primary' class='btnItem' bindtap= 'addPhoneContact'>手机联系人添加</button>
+</view>

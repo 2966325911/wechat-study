@@ -11,3 +11,20 @@
 .item_header :last-child {
   border-bottom: 0rpx
 } 
+
+.kf_button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 100rpx;
+  right: 0;
+  bottom: 20rpx;
+  position: fixed;
+}
+.kf_button::after{
+  border: 0px;
+}
+.kf_image{
+  z-index: 9999;
+  width: 100rpx;
+  height: 100rpx;
+}

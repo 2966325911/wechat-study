@@ -1,18 +1,11 @@
-// pages/contact/contact.js
+// pages/canvastest/canvastest.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    titlename :"地图定位",
-    searchmap: "地图搜索",
-    commonui:"常用组件样式测试",
-    canvastest :"canvas测试",
-    record : "录音功能测试",
-    uimutual : "ui界面交互弹框等",
-    webview : "webview测试",
-    device : "设备API测试"
+  
   },
 
   /**
@@ -68,17 +61,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return {
-      title : '小程序study',
-      path:'pages/index/index',
-      success : function(res){
-        console.log("转发成功" + JSON.stringify(res))
-      },
-      fail : function(res) {
-        console.log("转发失败" + JSON.stringify(res))
-      }
-
-    }
-    
+  
   }
 })

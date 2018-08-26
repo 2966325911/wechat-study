@@ -10,7 +10,12 @@
     "pages/logs/logs",
     "pages/mengchong/mengchong",
     "pages/map/map",
-    "pages/componentui/componentui"
+    "pages/componentui/componentui",
+    "pages/canvastest/canvastest",
+    "pages/record/record",
+    "pages/uimutual/uimutual",
+    "pages/webview/webview",
+    "pages/device/device"
   ],
   "window": {
     "backgroundTextStyle": "light",

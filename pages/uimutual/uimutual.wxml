@@ -1,0 +1,8 @@
+<!--pages/uimutual/uimutual.wxml-->
+<view>
+  <button class='btnItem' type='primary'  bindtap='showToast'>showToast提示showToast和hideToast</button>
+  <button class='btnItem' type='primary'  bindtap='showLoading'>showLoading显示加载和hideLoading</button>
+  <button class='btnItem' type='primary'  bindtap='showModal'>showModal​显示模态弹窗</button>
+  <button class='btnItem' type='primary'  bindtap='showActionSheet'>showActionSheet​显示操作菜单</button>
+ 
+</view>
