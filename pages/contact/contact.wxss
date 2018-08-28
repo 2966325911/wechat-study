@@ -28,3 +28,7 @@
   width: 100rpx;
   height: 100rpx;
 }
+
+.shareBtn{
+  margin-top: 10rpx
+}
