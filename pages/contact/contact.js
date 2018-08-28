@@ -80,5 +80,28 @@ Page({
 
     }
     
+  },
+
+  payTest(){
+    var  date = new Date()
+    console.log("date.getDate=" + date.getDay() + "=date.getFullYear" + date.getFullYear() + "=date.getMonth" + date.getMonth() + "=date.getDate()=" + date.getDate() + "=date.getHours=" + date.getHours() + "=date.getMinutes=" + date.getMinutes() + "=date.getMilliseconds" + date.getMilliseconds() + "=毫秒数==" + Date.parse(date) )
+    //支付设置
+    wx.requestPayment({
+      timeStamp: '1475009090',
+      nonceStr: '1122',
+      package: 'prepay_id=',
+      signType: 'MD5',
+      paySign: '',
+      success : function(res){
+
+      },
+      fail : function(res) {
+
+      },
+
+      complete : function(res){
+
+      }
+    })
   }
 })

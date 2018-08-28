@@ -15,6 +15,7 @@
            </view>
 
   <view>
+  <button class='payBtn' type='primary' bindtap='payTest'>支付调试</button>
     <button class='shareBtn' open-type='share' type='primary' hover-class='other-button-hover'>转发按钮</button>
   </view>
   

@@ -1,1 +1,5 @@
 /* pages/canvastest/canvastest.wxss */
+
+.canvas {
+  border: 1px solid
+}
