@@ -1,0 +1,16 @@
+<!--pages/customcomponent/customcomponent.wxml-->
+<view>
+<!--自定义组件时 在json中定义自定义组件名称引用 eg  "usingComponents":{   
+    "component-tag-name":"../component/component" component-tag-name 
+    组件名称 冒号后面跟路径名称 之前必须用 usingComponents来表示引用
+    组件中的变量要传递到page页面可以通过事件触发this.triggerEvent();来实行
+  }-->
+  <text>this is page</text>
+  <component-tag-name inner-text="some text" class="page-component"
+  fromPage="来自Page" data-other = "from dataset" bindmyevent="onMyEvent"
+  >
+    <view slot='slot' class='slot'>来自page页面，通过slot标签</view>
+    <view slot="slot"></view>
+  </component-tag-name>
+
+</view>

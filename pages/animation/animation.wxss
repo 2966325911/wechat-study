@@ -1,0 +1,15 @@
+/* pages/animation/animation.wxss */
+.animation{
+  background: red;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.btnItem{
+  margin-top: 10rpx;
+}
+
+.btnview {
+  position: fixed;
+  bottom: 10rpx
+}

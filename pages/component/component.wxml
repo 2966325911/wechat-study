@@ -1,0 +1,8 @@
+<view class='wapper'>
+  <text>this is component</text>
+  <slot name='slot'></slot>
+  我在中间
+  <slot name='slot2'></slot>
+
+  <button bindtap='onTap'>点击这个按钮将触发myevent事件</button>
+</view>

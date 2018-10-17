@@ -5,23 +5,29 @@
 
     <navigator class='item' url='/pages/map/map'>{{searchmap}}</navigator>
     <navigator class='item' url='/pages/componentui/componentui'>{{commonui}}</navigator>
-     <navigator class='item' url='/pages/canvastest/canvastest'>{{canvastest}}</navigator>
-          <navigator class='item' url='/pages/record/record'>{{record}}</navigator>
-          <navigator class='item' url='/pages/uimutual/uimutual'>{{uimutual}}</navigator>
+    <navigator class='item' url='/pages/canvastest/canvastest'>{{canvastest}}</navigator>
+    <navigator class='item' url='/pages/record/record'>{{record}}</navigator>
+    <navigator class='item' url='/pages/uimutual/uimutual'>{{uimutual}}</navigator>
 
-          <navigator class='item' url='/pages/webview/webview'>{{webview}}</navigator> 
-          
-                    <navigator class='item' url='/pages/device/device'>{{device}}</navigator>
-           </view>
+    <navigator class='item' url='/pages/webview/webview'>{{webview}}</navigator>
+
+    <navigator class='item' url='/pages/device/device'>{{device}}</navigator>
+
+    <navigator class='item' url='/pages/customcomponent/customcomponent'>{{customcomponent}}</navigator>
+    <navigator class='item' url='/pages/animation/animation'>{{animation}}</navigator>
+      <navigator class='item' url='/pages/calendar/calendar'>{{calendar}}</navigator>
+
+            <navigator class='item' url='/pages/calendr2/calendar2'>{{calendar2}}</navigator>
+  </view>
 
   <view>
-  <button class='payBtn' type='primary' bindtap='payTest'>支付调试</button>
+    <button class='payBtn' type='primary' bindtap='payTest'>支付调试</button>
     <button class='shareBtn' open-type='share' type='primary' hover-class='other-button-hover'>转发按钮</button>
   </view>
-  
-<button class="kf_button" bindtap='bindtapdianhua'>
+
+  <button class="kf_button" bindtap='bindtapdianhua'>
     <image class="kf_image" src="../../assets/avatar.png"></image>
-</button>
+  </button>
 
 
 </view>

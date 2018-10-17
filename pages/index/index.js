@@ -86,9 +86,15 @@ Page({
       this.setData({ "imgUrls": res.data });
     })
 
-    // grid 列表渲染
-    fetch("categories").then(res => {
-      this.setData({ "gridsList": res.data });
+    // // grid 列表渲染
+    // fetch("categories").then(res => {
+    //   this.setData({ "gridsList": res.data });
+    // })
+    app.getData("categories").then(res=>{
+      console.log("res",res)
+      this.setData({ "gridsList": res });
+    }).catch(errMsg=>{
+      console.log("errMsg",errMsg);
     })
   },
 

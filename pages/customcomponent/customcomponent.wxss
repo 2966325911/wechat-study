@@ -1,0 +1,10 @@
+/* pages/customcomponent/customcomponent.wxss */
+
+.page-component{
+  color: #fff;
+  padding: 10px
+}
+
+.slot{
+  color: green
+}

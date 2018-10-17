@@ -12,7 +12,11 @@ Page({
     record : "录音功能测试",
     uimutual : "ui界面交互弹框等",
     webview : "webview测试",
-    device : "设备API测试"
+    device : "设备API测试",
+    customcomponent :"自定义组件",
+    animation : '动画测试',
+    calendar : "日历",
+    calendar2 : "日历2完善"
   },
 
   /**
@@ -54,7 +58,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  ``
+
   },
 
   /**
@@ -83,6 +87,9 @@ Page({
   },
 
   payTest(){
+    //支付具体参见https://blog.csdn.net/sinat_35861727/article/details/73692794
+    //支付所具备的1.开通了微信支付，并且小程序绑定了微信支付；
+    //2.准备好小程序的appid，微信支付的商户号，支付秘钥。
     var  date = new Date()
     console.log("date.getDate=" + date.getDay() + "=date.getFullYear" + date.getFullYear() + "=date.getMonth" + date.getMonth() + "=date.getDate()=" + date.getDate() + "=date.getHours=" + date.getHours() + "=date.getMinutes=" + date.getMinutes() + "=date.getMilliseconds" + date.getMilliseconds() + "=毫秒数==" + Date.parse(date) )
     //支付设置

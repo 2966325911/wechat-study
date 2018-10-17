@@ -15,7 +15,11 @@
     "pages/record/record",
     "pages/uimutual/uimutual",
     "pages/webview/webview",
-    "pages/device/device"
+    "pages/device/device",
+    "pages/customcomponent/customcomponent",
+    "pages/animation/animation",
+    "pages/calendar/calendar",
+    "pages/calendr2/calendar2"
   ],
   "window": {
     "backgroundTextStyle": "light",

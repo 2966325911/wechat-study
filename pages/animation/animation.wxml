@@ -1,0 +1,15 @@
+<!--pages/animation/animation.wxml-->
+<view>
+  <view animation='{{animationData}}' class='animation' ></view>
+
+  <view class='btnview'>
+    <button class='btnItem' type='primary' bindtap='rotateAndScale'>旋转同时放大</button>
+  
+  <button class='btnItem' type='primary' bindtap='rotateThenScale'>旋转后放大</button>
+
+  <button class='btnItem' type='primary' bindtap='rotateAndScaleThenTranslate'>先旋转同时放大，然后平移</button>
+  </view>
+
+  
+</view>
+

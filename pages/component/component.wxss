@@ -1,0 +1,9 @@
+.wapper{
+  background-color: #ccc;
+  width: 100%;
+  height: auto
+}
+
+.slot {
+  color: red
+}

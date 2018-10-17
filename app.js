@@ -1,4 +1,5 @@
 //app.js
+
 App({
 
   globalData : {
@@ -64,5 +65,83 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+
+   /** 
+   * 自定义post函数，返回Promise
+   * +-------------------
+   * @param {String}      url 接口网址
+   * @param {arrayObject} data 要传的数组对象 例如: {name: 'xxx', age: 32}
+   * @return {Promise}    promise 返回promise供后续操作
+   */
+  post: function (url, data) {
+    wx.showLoading({
+      title: '加载中...',
+    })
+    var promise = new Promise((resolve, reject) => {
+      //init
+      var that = this;
+      var postData = data;
+      //网络请求
+      wx.request({
+        url: this.globalData.baseUrl + "/api/" + url,
+        data: postData,
+        method: 'POST',
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        success: function (res) { //服务器返回数据
+          if (res.data.status == 1) { //res.data 为 后台返回数据，格式为{"data":{...}, "info":"成功", "status":1}, 后台规定：如果status为1,既是正确结果。可以根据自己业务逻辑来设定判断条件
+            resolve(res.data.data);
+            wx.hideLoading()
+          } else { //返回错误提示信息
+            reject(res.data.info);
+            wx.hideLoading()
+          }
+        },
+        error: function (e) {
+          reject('网络出错');
+          wx.hideLoading()
+        }
+      })
+    });
+    return promise;
+  },
+
+  getData: function (url, data) {
+    wx.showLoading({
+      title: '加载中...',
+    })
+    var promise = new Promise((resolve, reject) => {
+      //init
+      var that = this;
+      var getData = data;
+      //网络请求
+      wx.request({
+        url: `https://locally.uieee.com/${url}`,
+        data: getData,
+        method: 'GET',
+      
+        success: function (res) { 
+          console.log("res==",res)
+          console.log("res.data.statusCode", res.data.statusCode)
+          resolve(res.data);
+          wx.hideLoading()
+          // //服务器返回数据
+          // if (res.data.statusCode == 200) { //res.data 为 后台返回数据，格式为{"data":{...}, "info":"成功", "status":1}, 后台规定：如果status为1,既是正确结果。可以根据自己业务逻辑来设定判断条件
+          //   resolve(res.data.data);
+          //   wx.hideLoading()
+          // } else { //返回错误提示信息
+          //   reject(res.data.info);
+          //   wx.hideLoading()
+          // }
+        },
+        error: function (e) {
+          reject('网络出错');
+          wx.hideLoading()
+        }
+      })
+    });
+    return promise;
+  },
 })
