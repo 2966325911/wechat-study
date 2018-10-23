@@ -15,14 +15,17 @@
 
     <navigator class='item' url='/pages/customcomponent/customcomponent'>{{customcomponent}}</navigator>
     <navigator class='item' url='/pages/animation/animation'>{{animation}}</navigator>
-      <navigator class='item' url='/pages/calendar/calendar'>{{calendar}}</navigator>
+    <navigator class='item' url='/pages/calendar/calendar'>{{calendar}}</navigator>
 
-            <navigator class='item' url='/pages/calendr2/calendar2'>{{calendar2}}</navigator>
+    <navigator class='item' url='/pages/calendr2/calendar2'>{{calendar2}}</navigator>
+    <navigator class='item' url='/pages/showmodal/showmodal'>{{showmodal}}</navigator>
+        <navigator class='item' url='/pages/compentuitest/compentuitest'>{{compentuitest}}</navigator>
   </view>
 
   <view>
     <button class='payBtn' type='primary' bindtap='payTest'>支付调试</button>
     <button class='shareBtn' open-type='share' type='primary' hover-class='other-button-hover'>转发按钮</button>
+
   </view>
 
   <button class="kf_button" bindtap='bindtapdianhua'>

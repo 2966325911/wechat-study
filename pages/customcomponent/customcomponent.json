@@ -1,5 +1,6 @@
 {
   "usingComponents":{   
-    "component-tag-name":"../component/component"
+    "component-tag-name":"../component/component",
+    "i-toast": "../../dist/toast/index"
   }
 }

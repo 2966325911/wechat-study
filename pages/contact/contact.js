@@ -16,7 +16,9 @@ Page({
     customcomponent :"自定义组件",
     animation : '动画测试',
     calendar : "日历",
-    calendar2 : "日历2完善"
+    calendar2 : "日历2完善",
+    showmodal:"模拟弹出框",
+    compentuitest:"三方自定义UI样式展示"
   },
 
   /**

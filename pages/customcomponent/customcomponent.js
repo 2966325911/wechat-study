@@ -1,4 +1,5 @@
 // pages/customcomponent/customcomponent.js
+const { $Toast } = require('../../dist/base/index.js');
 Page({
 
   /**
@@ -67,6 +68,12 @@ Page({
   onMyEvent : function(e){
     console.log(e.detail.msg)
   },
+
+  showToast(){
+    $Toast({
+      content : "这是纯文本显示"
+    })
+  }
 
 
 })

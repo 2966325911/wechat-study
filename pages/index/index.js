@@ -109,7 +109,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    //底部添加红点数字
+    wx.setTabBarBadge({
+      index: 0,
+      text: '99+',
+    })
+
+    //底部添加红点，只有当当前页面点的时候，index所对应的红点才会显示
+    wx.showTabBarRedDot({
+      index: 2,
+    })
   },
 
   /**
@@ -123,7 +132,21 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+     
+    // console.log("返回到上一个页面")
+    // var pages = getCurrentPages();
+    // var currentPages = pages[pages.length - 1];
+    // var prevPage = pages[pages.length - 2];
+    // if(this.data.isAddSuccess === true) {
+    //   prevPage.setData({
+    //     needRefresh: true
+    //   })
+    // }else {
+    //   prevPage.setData({
+    //     needRefresh: false
+    //   })
+    // }
+ 
   },
 
   /**
