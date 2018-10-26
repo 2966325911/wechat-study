@@ -229,7 +229,33 @@ Page({
     // ctx.font = value
     // ctx.font = 'italic bold 20px cursive'
     
-    ctx.draw()
+    // ctx.draw()
+
+    
+    ctx.save()
+    wx.chooseImage({
+      success: function(res){
+        console.log("res",res.tempFilePaths[0])
+        ctx.drawImage(res.tempFilePaths[0],0,0,150,100)
+        // ctx.draw()
+
+        // ctx.restore()
+
+        ctx.setFillStyle('red')
+        ctx.fillRect(10, 10, 50, 30)
+        // ctx.save()
+
+        ctx.setFillStyle('white')
+        ctx.setFontSize(20)
+        ctx.setTextAlign('center')
+        ctx.setTextBaseline('middle')
+        ctx.fillText("乖",30,22)
+        const metrics = ctx.measureText('乖')
+        console.log("乖.width==" + metrics.width)
+        ctx.draw()
+      },
+    })
+   
   },
 
   /**
