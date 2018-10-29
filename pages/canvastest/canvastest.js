@@ -8,7 +8,7 @@ Page({
     canvasWidth : 700,
     canvasHeight : 500,
     x: 0,
-    y: 0,
+    y: 0,   
     hidden: true
   },
 

@@ -102,7 +102,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    var i = 123
+    console.log("int=i=",i)
+    console.log("string=i2=",String(i))
+    //数字转字符串 String(i)或者i.toString（）都可以
+    if(i.toString() === '123'){
+      console.log("转换字符串成功")
+    }
   },
 
   /**
