@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/cssstyle/cssstyle",
     "pages/index/index",
     "pages/message/message",
     "pages/profile/profile",
@@ -12,6 +13,7 @@
     "pages/map/map",
     "pages/componentui/componentui",
     "pages/canvastest/canvastest",
+    "pages/showmodal/showmodal",
     "pages/record/record",
     "pages/uimutual/uimutual",
     "pages/webview/webview",
@@ -20,8 +22,8 @@
     "pages/animation/animation",
     "pages/calendar/calendar",
     "pages/calendr2/calendar2",
-    "pages/showmodal/showmodal",
     "pages/compentuitest/compentuitest",
+    
     "pages/icon/index",
     "pages/color/index",
     "pages/button/index",

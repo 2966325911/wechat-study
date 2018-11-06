@@ -1,5 +1,8 @@
 /* pages/canvastest/canvastest.wxss */
 
-.canvas {
-  border: 1px solid
+
+
+.img{
+  position: fixed;
+  width: 100%;
 }

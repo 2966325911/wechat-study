@@ -1,0 +1,15 @@
+<!--pages/cssstyle/cssstyle.wxml-->
+<view class='container'>
+  <view class='oval'></view>
+  <view class='triangle-up'></view>
+  <view class='triangle-down'></view>
+  <view class='triangle-left'></view>
+  <view class='triangle-right'></view>
+  <view class='triangle-topleft'></view>
+  <view class='triangle-topright'></view>
+  <view class='curvedarrow'></view>
+  <view class='trapezoid'></view>
+  <view class='parallelogram'></view>
+  <view class='start-six'></view>
+  <view class='start-five'></view>
+</view>

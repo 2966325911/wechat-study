@@ -232,29 +232,51 @@ Page({
     // ctx.draw()
 
     
-    ctx.save()
-    wx.chooseImage({
-      success: function(res){
-        console.log("res",res.tempFilePaths[0])
-        ctx.drawImage(res.tempFilePaths[0],0,0,150,100)
-        // ctx.draw()
+    // ctx.save()
+    // wx.chooseImage({
+    //   success: function(res){
+    //     console.log("res",res.tempFilePaths[0])
+    //     ctx.drawImage(res.tempFilePaths[0],0,0,150,100)
+    //     // ctx.draw()
 
-        // ctx.restore()
+    //     // ctx.restore()
 
-        ctx.setFillStyle('red')
-        ctx.fillRect(10, 10, 50, 30)
-        // ctx.save()
+    //     ctx.setFillStyle('red')
+    //     ctx.fillRect(10, 10, 50, 30)
+    //     // ctx.save()
 
-        ctx.setFillStyle('white')
-        ctx.setFontSize(20)
-        ctx.setTextAlign('center')
-        ctx.setTextBaseline('middle')
-        ctx.fillText("乖",30,22)
-        const metrics = ctx.measureText('乖')
-        console.log("乖.width==" + metrics.width)
-        ctx.draw()
-      },
-    })
+    //     ctx.setFillStyle('white')
+    //     ctx.setFontSize(20)
+    //     ctx.setTextAlign('center')
+    //     ctx.setTextBaseline('middle')
+    //     ctx.fillText("乖",30,22)
+    //     const metrics = ctx.measureText('乖')
+    //     console.log("乖.width==" + metrics.width)
+    //     ctx.draw()
+    //   },
+    // })
+
+    //drawImage可能出现的渲染慢的问题，把图片单独用image src渲染上去，然后用canvas去画文字
+    //去合理控制css的样式即可
+    ctx.setFillStyle('red')
+    ctx.fillRect(10, 10, 50, 30)
+    // ctx.save()
+
+
+    const str1 = ctx.measureText('孙子孙子')
+    console.log("孙子孙子.width==", str1.width)
+    const str2 = ctx.measureText('丈夫丈夫')
+    console.log("丈夫丈夫.width==", str2.width)
+    
+    ctx.setFillStyle('white')
+    ctx.setFontSize(16)
+    ctx.setTextAlign('center')
+    ctx.setTextBaseline('middle')
+    ctx.fillText("乖", 30, 22)
+    const metrics = ctx.measureText('乖')
+    console.log("乖.width==" + metrics.width)
+    ctx.draw()
+
    
   },
 

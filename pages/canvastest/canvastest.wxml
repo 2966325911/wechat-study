@@ -2,7 +2,10 @@
 <view id='container'>
 
 <!--canvas 标签默认宽度300px、高度225px-->
-  <canvas canvas-id='myCanvas' class='canvas' style='width:{{canvasWidth}}px;height:{{canvasHeight}}px' bindtap='tapClick' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
+  <!-- <canvas canvas-id='myCanvas' class='canvas' style='width:{{canvasWidth}}px;height:{{canvasHeight}}px' bindtap='tapClick' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas> -->
+   <image src='../../assets/banner-01.png' class='img'></image>
+   <canvas canvas-id='myCanvas' class='canvas'  bindtap='tapClick' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
+ 
   <view hidden='{{hidden}}'>
     Corrdinates:({{x}},{{y}})
   </view>

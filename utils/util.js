@@ -69,7 +69,7 @@ module.exports = {
 
     var time = new Date(timpstamp)
     var y = time.getFullYear();
-    var m = time.getMonth + 1;
+    var m = time.getMonth() + 1;
     var d = time.getDay();
     var h = time.getHours();
     var mm = time.getMinutes();
@@ -197,5 +197,31 @@ module.exports = {
     });
     return promise;
   },
+
+  /**
+  * 根据传入的年月日 时分获取当天的timestamp
+  */
+  getTimeStamp(ymdhm) {
+    var time = new Date(ymdhm);
+    return time.getTime()
+  },
+
+  /**
+   * 获取当前的时间格式2018-10-30 11:52
+   */
+  timestamp2date() {
+    function add0(m) {
+      return m < 10 ? '0' + m : m
+    }
+
+    var time = new Date()
+    var y = time.getFullYear();
+    var m = time.getMonth() + 1;
+    var d = time.getDate();
+    var h = time.getHours();
+    var mm = time.getMinutes();
+    return y + '-' + add0(m) + '-' + add0(d) + ' ' + add0(h) + ':' + add0(mm)
+  },
+
 
 }

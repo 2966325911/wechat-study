@@ -9,8 +9,11 @@ Page({
   },
   powerDrawer: function (e) {
     var currentStatu = e.currentTarget.dataset.statu;
+    console.log("currentStatus==",currentStatu)
     this.util(currentStatu)
   },
+
+
   util: function (currentStatu) {
     /* 动画部分 */
     // 第1步：创建动画实例 

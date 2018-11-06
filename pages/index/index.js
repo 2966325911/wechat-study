@@ -55,6 +55,7 @@ const app = getApp()
 
 
 const fetch = require("../../utils/fetch")
+const util = require("../../utils/util.js")
 Page({
 
   /**
@@ -109,6 +110,16 @@ Page({
     if(i.toString() === '123'){
       console.log("转换字符串成功")
     }
+
+    var time = new Date("2018-10-30 12:51")
+    console.log("time",time.getTime())
+    console.log("curTime",util.timestamp2date())
+    console.log("curTime", util.getTimeStamp(util.timestamp2date()))
+    console.log("curTime", util.getNowTimeStam())
+
+    var info = wx.getSystemInfoSync()
+    console.log("屏幕高度",info.windowHeight)
+    console.log("屏幕宽度",info.windowWidth )
   },
 
   /**

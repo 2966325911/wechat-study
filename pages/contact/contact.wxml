@@ -20,6 +20,7 @@
     <navigator class='item' url='/pages/calendr2/calendar2'>{{calendar2}}</navigator>
     <navigator class='item' url='/pages/showmodal/showmodal'>{{showmodal}}</navigator>
         <navigator class='item' url='/pages/compentuitest/compentuitest'>{{compentuitest}}</navigator>
+        <navigator class='item' url='/pages/cssstyle/cssstyle'>{{cssstyle}}</navigator>
   </view>
 
   <view>

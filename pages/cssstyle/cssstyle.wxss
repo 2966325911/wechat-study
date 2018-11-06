@@ -1,0 +1,162 @@
+/* pages/cssstyle/cssstyle.wxss */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*椭圆*/
+.oval{
+  width: 200rpx;
+  height: 100rpx;
+  background: red;
+  border-radius: 100rpx / 50rpx
+}
+/*三角up*/
+.triangle-up{
+  width: 0;
+  height: 0;
+  border-left: 50rpx solid transparent;
+  border-right: 50rpx solid transparent;
+  border-bottom: 100rpx solid red
+}
+/*三角down*/
+.triangle-down{
+  width: 0;
+  height: 0;
+  border-left: 50rpx solid transparent;
+  border-right: 50rpx solid transparent;
+  border-top: 100rpx solid red
+}
+
+/*三角left*/
+.triangle-left{
+  width : 0;
+  height: 0;
+  border-top: 50rpx solid transparent;
+  border-right: 100rpx solid red;
+  border-bottom: 50rpx solid transparent;
+}
+/*三角right*/
+.triangle-right{
+  width: 0;
+  height: 0;
+  border-top: 50rpx solid transparent;
+  border-left: 100rpx solid red;
+  border-bottom: 50rpx solid transparent
+}
+
+/*直角三角*/
+.triangle-topleft{
+  width: 0;
+  height: 0;
+  border-top: 100rpx solid red;
+  border-right: 100rpx solid transparent
+}
+
+.triangle-topright{
+  width: 0;
+  height: 0;
+  border-top: 100rpx solid red;
+  border-left: 100rpx solid transparent;
+}
+
+/*类似撤回的小箭头*/ 
+    .curvedarrow {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-right: 9px solid red;
+      transform: rotate(10deg);
+    }
+    .curvedarrow:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 3px solid red;
+      border-radius: 20px 0 0 0;
+      top: -12px;
+      left: -9px;
+      width: 12px;
+      height: 12px;
+      transform: rotate(45deg);
+    }
+
+    .trapezoid{
+      border-bottom: 100rpx solid red;
+      border-left: 25rpx solid transparent;
+      border-right: 25rpx solid transparent;
+      width: 100rpx;
+      height: 50rpx;
+    }
+
+    .parallelogram{
+      margin-top: 20rpx;
+      width: 150rpx;
+      height: 100rpx;
+      transform: skew(20deg);
+      background: red;
+    }
+    .start-six{
+      width: 0;
+      height: 0;
+      border-left: 50rpx solid transparent;
+      border-right: 50rpx solid transparent;
+      border-bottom: 100rpx solid red;
+      position: relative
+    }
+
+    .start-six::after{
+      width: 0;
+      height: 0;
+      border-left: 50rpx solid transparent;
+      border-right: 50rpx solid transparent;
+      border-top:  100rpx solid red;
+      position: absolute;
+      content: " ";
+      top: 30rpx;
+      left: -50rpx;
+    }
+
+    .start-five{
+    
+      margin: 100rpx 0;
+      position: relative;
+      display: block;
+      color: red;
+      width: 0;
+      height: 0;
+      border-right: 100rpx solid transparent;
+      border-bottom:  70rpx solid red;
+      border-left: 100rpx solid transparent;
+      transform: rotate(35deg)
+    }
+    .start-five::before{
+      border-bottom: 80rpx solid red;
+      border-left: 30rpx solid transparent;
+      border-right: 30rpx solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45rpx;
+      left: -65rpx;
+      display: block;
+      content: " ";
+      transform: rotate(-35deg)
+    }
+
+    .start-five::after{
+      position: absolute;
+      display: block;
+      color: red;
+      top: 6rpx;
+      left: -105rpx;
+      width: 0rpx;
+      height: 0rpx;
+      border-right: 100rpx solid transparent;
+      border-bottom: 70rpx solid red;
+      border-left: 100rpx solid transparent;
+      transform:  rotate(-70deg);
+      content: ""
+    } 
+  
