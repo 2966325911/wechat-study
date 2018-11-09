@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/cssstyle/cssstyle",
+    "pages/animation/animation",
     "pages/index/index",
     "pages/message/message",
     "pages/profile/profile",
@@ -19,11 +19,10 @@
     "pages/webview/webview",
     "pages/device/device",
     "pages/customcomponent/customcomponent",
-    "pages/animation/animation",
     "pages/calendar/calendar",
     "pages/calendr2/calendar2",
     "pages/compentuitest/compentuitest",
-    
+    "pages/cssstyle/cssstyle",
     "pages/icon/index",
     "pages/color/index",
     "pages/button/index",
@@ -69,14 +68,13 @@
     "navigationBarTextStyle": "white",
     "backgroundColor": "#bcc0c9",
     "enablePullDownRefresh": false,
-    "onReachBottomDistance":10
+    "onReachBottomDistance": 10
   },
   "tabBar": {
     "color": "#999",
     "selectedColor": "#444",
     "backgroundColor": "#fff",
     "borderStyle": "black",
-  
     "list": [
       {
         "pagePath": "pages/index/index",

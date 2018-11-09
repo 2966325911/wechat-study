@@ -1,15 +1,71 @@
 /* pages/animation/animation.wxss */
-.animation{
+
+.animation {
   background: red;
   width: 100rpx;
   height: 100rpx;
 }
 
-.btnItem{
+.btnItem {
   margin-top: 10rpx;
 }
 
 .btnview {
   position: fixed;
-  bottom: 10rpx
+  bottom: 10rpx;
+}
+
+.text_mask {
+  text-align: center;
+  font-size: 60rpx;
+  color: white;
+}
+
+.bottom_mask {
+  top: 20%;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 10;
+}
+
+/*模态框*/
+
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+/*动画前初始位置*/
+
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
 }

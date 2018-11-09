@@ -1,15 +1,27 @@
 <!--pages/animation/animation.wxml-->
 <view>
-  <view animation='{{animationData}}' class='animation' ></view>
+  <view animation='{{animationData}}' class='animation'></view>
 
   <view class='btnview'>
     <button class='btnItem' type='primary' bindtap='rotateAndScale'>旋转同时放大</button>
-  
-  <button class='btnItem' type='primary' bindtap='rotateThenScale'>旋转后放大</button>
 
-  <button class='btnItem' type='primary' bindtap='rotateAndScaleThenTranslate'>先旋转同时放大，然后平移</button>
+    <button class='btnItem' type='primary' bindtap='rotateThenScale'>旋转后放大</button>
+
+    <button class='btnItem' type='primary' bindtap='rotateAndScaleThenTranslate'>先旋转同时放大，然后平移</button>
+
+    <button class='btnItem' type='primary' bindtap='bottomTranslate'>从底部弹出</button>
+
+    <button class='btnItem' bindtap="showModal">点我</button>
   </view>
 
-  
+  <view wx:if='{{needShow}}' class='bottom_mask' animation='{{animationMask}}' bindtap='hideModalMask'>
+    <text class='text_mask'>这是浮层的</text>
+  </view>
+
+  <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+    <view class="modals-cancel" bindtap="hideModal"></view>
+    <view class="bottom-dialog-body bottom-pos" animation="{{animationMask2}}"></view>
 </view>
 
+
+</view>

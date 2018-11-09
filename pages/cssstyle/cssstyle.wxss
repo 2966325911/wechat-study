@@ -4,6 +4,38 @@
   align-items: center;
   justify-content: center;
 }
+
+.text_container{
+  width: auto;
+margin: 30rpx;
+background-color: #fff;
+text-align: center;
+}
+
+.price{
+  position: relative;
+  display: inline-block;
+  font-size: 100rpx;
+  color: red;
+}
+
+.price::before{
+  content: "金额:￥";
+  position: absolute;
+  font-size: 80rpx;
+  color: black;
+  top: 10rpx;
+  left: -240rpx;
+}
+
+.price::after{
+  content: ".00元";
+  font-size: 50rpx;
+  color: black;
+  position: absolute;
+  top: 40rpx;
+  right: -120rpx;
+}
 /*椭圆*/
 .oval{
   width: 200rpx;
@@ -159,4 +191,158 @@
       transform:  rotate(-70deg);
       content: ""
     } 
-  
+
+    .hexagon{
+      width: 100px;
+      height: 55px;
+      background: red;
+      position: relative;
+      margin-bottom: 50rpx;
+    }
+
+    .hexagon::before {
+      content: " ";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid red
+    }
+
+    .hexagon::after{
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      right: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid red;
+      
+    }
+    .octagon{
+      
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+    }
+
+    .octagon::before{
+      content: " ";
+      width: 50px;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 24px solid red;
+      border-left: 24px solid #eee;
+      border-right: 24px solid #eee;
+    }
+
+    .octagon::after{
+      content: "";
+      width: 50px;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-top: 24px solid red;
+      border-left: 24px solid #eee;
+      border-right: 24px solid #eee;
+    }
+
+    .heart{
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+
+    .heart::before,.heart::after{
+      position: absolute;
+      content: " ";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%
+    }
+
+    .heart::after{
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%
+    }
+/* 
+    .myheart{
+      width: 80px;
+      height: 50px;
+      background: red;
+      border-radius: 10em 0px 0px 10em;
+      transform: rotate(45deg)
+    }
+
+    .myheart::after{
+       width: 80px;
+      height: 50px;
+      background: red;
+      border-radius: 10em 0px 0px 10em;
+      transform: rotate(-45deg);
+      transform-origin: 100% 100%
+    } */
+
+    .diamod{
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-bottom-color: red;
+      position: relative;
+      top: -50px;
+    }
+
+    .diamod::after{
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 50px;
+      width: 0;
+      height: 0;
+      border:50px solid transparent;
+      border-top-color: red;
+    }
+
+    .diamod-narrow{
+      width: 0;
+      height: 0;
+      position: relative;
+      border: 50px solid transparent;
+      border-bottom: 70px solid red;
+      top: -50px;
+    }
+
+    .diamod-narrow::after{
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -50px;
+      top: 70px;
+      border: 50px solid transparent;
+      border-top: 70px solid red
+      
+    }
+/**border-radius是一种缩写方法。如果“/”前后的值都存在，那么“/”前面的值设置其水平半径，“/”后面值设置其垂直半径。水平半径/垂直半径**/
+    .egg{
+      display: block;
+      width: 126px;
+      height: 180px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%
+
+    }
