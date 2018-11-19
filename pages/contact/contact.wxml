@@ -21,6 +21,8 @@
     <navigator class='item' url='/pages/showmodal/showmodal'>{{showmodal}}</navigator>
         <navigator class='item' url='/pages/compentuitest/compentuitest'>{{compentuitest}}</navigator>
         <navigator class='item' url='/pages/cssstyle/cssstyle'>{{cssstyle}}</navigator>
+        <navigator class='item' url='/pages/blur/blur'>{{blur}}</navigator>
+        <navigator class='item' url='/pages/ripple/ripple'>{{ripple}}</navigator>
   </view>
 
   <view>

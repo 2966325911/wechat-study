@@ -1,0 +1,111 @@
+/* pages/blur/blur.wxss */
+.wrap {
+    height: 300rpx;
+}
+
+.picker-wrap {
+    width: 750rpx;
+    height: 88rpx;
+}
+
+.picker-wrap picker {
+    width: 100%;
+    height: 88rpx;
+    border-bottom: 2rpx solid #ddd;
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+    font-size: 30rpx;
+    background: #eee;
+}
+
+.picker {
+    width: 750rpx;
+    text-align: center;
+}
+
+.time {
+    width: 750rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.save {
+    margin-top: 30rpx;
+}
+
+.img_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* 
+none 默认值，没有效果。
+blu 高斯模糊
+brightness() 亮度
+contrast() 对比度
+drop-shadow() 阴影
+grayscale() 灰度
+hue-rotate() 色相旋转
+invert() 反色
+opacity() 透明度
+saturate() 饱和度
+sepia() 复古色
+url() SVG滤镜 */
+.blur_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: blur(10rpx)
+}
+.brightness_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: brightness(70%)
+}
+.blur_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: blur(10rpx)
+}
+.contrast_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: contrast(50%)
+}
+.drop_shadow_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: drop-shadow(15rpx 15rpx 10rpx #999999);
+}
+.grayscale_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: grayscale(60%)
+}
+.hue_rotate_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: hue-rotate(90deg);
+}
+.invert_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: invert(0.8)
+}
+.opacity_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: opacity(20%)
+}
+.saturate_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: saturate(0%)
+}
+.sepia_img{
+  width: 200rpx;
+  height: 300rpx;
+  filter: sepia(70%)
+}

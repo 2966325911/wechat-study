@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/animation/animation",
+ 
     "pages/index/index",
     "pages/message/message",
     "pages/profile/profile",
@@ -16,6 +16,7 @@
     "pages/showmodal/showmodal",
     "pages/record/record",
     "pages/uimutual/uimutual",
+    "pages/animation/animation",
     "pages/webview/webview",
     "pages/device/device",
     "pages/customcomponent/customcomponent",
@@ -59,7 +60,10 @@
     "pages/index-list/index",
     "pages/collapse/index",
     "pages/sticky/index",
-    "pages/load-more/index"
+    "pages/load-more/index",
+    "pages/blur/blur",
+    "pages/ripple/ripple"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

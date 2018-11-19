@@ -1,4 +1,7 @@
 // pages/animation/animation.js
+
+const exif = require("../../utils/exif.js")
+
 Page({
 
   /**
@@ -217,5 +220,24 @@ Page({
       animationMask2: this.animation.export(),
     })
   },
+
+
+  selectImg(){
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths
+        console.log("temFilePaths[0]==",tempFilePaths[0])
+
+        exif.getData(tempFilePaths[0], function () {
+          var exifData = exif.pretty(tempFilePaths[0]);
+          console.log("exifData===",exifData)
+        });
+      }
+    })
+  }
 
 })

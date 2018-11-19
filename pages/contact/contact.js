@@ -19,7 +19,9 @@ Page({
     calendar2 : "日历2完善",
     showmodal:"模拟弹出框",
     compentuitest:"三方自定义UI样式展示",
-    cssstyle: 'css会绘制常用小图标'
+    cssstyle: 'css会绘制常用小图标',
+    blur:"滤镜效果",
+    ripple:"ripple"
   },
 
   /**

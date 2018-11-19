@@ -1,0 +1,31 @@
+<!--pages/blur/blur.wxml-->
+<view class='wrap'>
+    <button bindtap='choose'>choose image</button>
+    <!-- <button wx:if="{{selected}}" bindtap='filterTap'>filter</button> -->
+    <view wx:if="{{selected}}" class='picker-wrap'>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                当前选择：{{array[index]}}
+            </view>
+        </picker>
+    </view>
+    <view class='time' wx:if="{{gap}}">Processing time:{{gap}}ms</view>
+</view>
+<canvas canvas-id='hehe' style='margin:0 auto;width:320px; height:320px; border:1px solid #ddd;'></canvas>
+<view class='img_container'>
+  <image class='blur_img' src='{{imgPath}}'></image>
+  <image class='brightness_img' src='{{imgPath}}'></image>
+  <image class='contrast_img' src='{{imgPath}}'></image>
+  <image class='drop_shadow_img' src='{{imgPath}}'></image>
+  <image class='grayscale_img' src='{{imgPath}}'></image>
+  <image class='hue_rotate_img' src='{{imgPath}}'></image>
+  <image class='invert_img' src='{{imgPath}}'></image>
+  <image class='opacity_img' src='{{imgPath}}'></image>
+   <image class='saturate_img' src='{{imgPath}}'></image>
+    <image class='sepia_img' src='{{imgPath}}'></image>
+     <image class='fuhe_img' src='{{imgPath}}'></image>
+
+
+</view>
+
+<button wx:if="{{selected}}" bindtap='save' class='save'>save</button>

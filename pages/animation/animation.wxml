@@ -11,6 +11,8 @@
 
     <button class='btnItem' type='primary' bindtap='bottomTranslate'>从底部弹出</button>
 
+    <button class='btnItem' type='primary' bindtap='selectImg'>选择图片获取信息</button>
+
     <button class='btnItem' bindtap="showModal">点我</button>
   </view>
 
@@ -20,8 +22,10 @@
 
   <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
     <view class="modals-cancel" bindtap="hideModal"></view>
-    <view class="bottom-dialog-body bottom-pos" animation="{{animationMask2}}"></view>
-</view>
+    <view class="bottom-dialog-body bottom-pos" animation="{{animationMask2}}">
+    </view>
+
+  </view>
 
 
 </view>
