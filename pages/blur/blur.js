@@ -223,6 +223,7 @@ Page({
               selected: 1
             })
           })
+          
 
           z.setData({
             imgPath : path
